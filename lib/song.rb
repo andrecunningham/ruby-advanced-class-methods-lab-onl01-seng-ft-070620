@@ -50,7 +50,10 @@ song.artist_name = split_filename[0]
 song.save
 song
 end
- def self.destriy_all
+
+ def self.destroy_all
+   self.all.clear
+ end
  
 
 
