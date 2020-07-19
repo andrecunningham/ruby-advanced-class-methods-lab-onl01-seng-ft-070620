@@ -42,7 +42,7 @@ end
     @@all.sort{ |a,b| a.name <=> b.name }
 end
 
-def self.create_from_filename(filename)
+def self.new_from_filename(filename)
 split_filename = filename.chop.chop.chop.chop.split(" - ")
 song = Song.new
 song.name = split_filename[1]
